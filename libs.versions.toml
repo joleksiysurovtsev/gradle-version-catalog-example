@@ -1,0 +1,45 @@
+[versions]
+fasterxmlJackson = "2.14.1"
+kotlin = "1.8.10"
+springV2 = "2.7.1"
+springV3 = "3.0.6"
+
+[libraries]
+com-fasterxml-jackson-core-jackson-core = { group = "com.fasterxml.jackson.core", name = "jackson-core", version.ref = "fasterxmlJackson" }
+com-fasterxml-jackson-core-jackson-databind = { group = "com.fasterxml.jackson.core", name = "jackson-databind", version.ref = "fasterxmlJackson" }
+com-fasterxml-jackson-dataformat-jackson-dataformat-csv = { group = "com.fasterxml.jackson.dataformat", name = "jackson-dataformat-csv", version.ref = "fasterxmlJackson" }
+com-fasterxml-jackson-dataformat-jackson-dataformat-xml = { group = "com.fasterxml.jackson.dataformat", name = "jackson-dataformat-xml", version.ref = "fasterxmlJackson" }
+com-fasterxml-jackson-datatype-jsr310 = { group = "com.fasterxml.jackson.datatype", name = "jackson-datatype-jsr310", version.ref = "fasterxmlJackson" }
+com-fasterxml-jackson-module-kotlin = { group = "com.fasterxml.jackson.module", name = "jackson-module-kotlin", version.ref = "fasterxmlJackson" }
+com-fasterxml-jackson-module-paranamer = { group = "com.fasterxml.jackson.module", name = "jackson-module-paranamer", version.ref = "fasterxmlJackson" }
+org-jetbrains-kotlin-kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin" }
+org-jetbrains-kotlin-kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin" }
+org-jetbrains-kotlin-reflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect", version.ref = "kotlin" }
+org-jetbrains-kotlin-stdlib-jdk8 = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib-jdk8", version.ref = "kotlin" }
+org-springframework-v2-spring-boot-autoconfigure = { group = "org.springframework.boot", name = "spring-boot-autoconfigure", version.ref = "springV2" }
+org-springframework-v2-spring-boot-configuration-processor = { group = "org.springframework.boot", name = "spring-boot-configuration-processor", version.ref = "springV2" }
+org-springframework-v2-spring-boot-devtools = { group = "org.springframework.boot", name = "spring-boot-devtools", version.ref = "springV2" }
+org-springframework-v2-spring-boot-starter-actuator = { group = "org.springframework.boot", name = "spring-boot-starter-actuator", version.ref = "springV2" }
+org-springframework-v2-spring-boot-starter-aop = { group = "org.springframework.boot", name = "spring-boot-starter-aop", version.ref = "springV2" }
+org-springframework-v2-spring-boot-starter-cache = { group = "org.springframework.boot", name = "spring-boot-starter-cache", version.ref = "springV2" }
+org-springframework-v2-spring-boot-starter-data-jdbc = { group = "org.springframework.boot", name = "spring-boot-starter-data-jdbc", version.ref = "springV2" }
+org-springframework-v2-spring-boot-starter-data-jpa = { group = "org.springframework.boot", name = "spring-boot-starter-data-jpa", version.ref = "springV2" }
+org-springframework-v3-spring-boot-autoconfigure = { group = "org.springframework.boot", name = "spring-boot-autoconfigure", version.ref = "springV3" }
+org-springframework-v3-spring-boot-configuration-processor = { group = "org.springframework.boot", name = "spring-boot-starter", version.ref = "springV3" }
+org-springframework-v3-spring-boot-devtools = { group = "org.springframework.boot", name = "spring-boot-devtools", version.ref = "springV3" }
+org-springframework-v3-spring-boot-starter-actuator = { group = "org.springframework.boot", name = "spring-boot-starter-actuator", version.ref = "springV3" }
+org-springframework-v3-spring-boot-starter-aop = { group = "org.springframework.boot", name = "spring-boot-starter-aop", version.ref = "springV3" }
+org-springframework-v3-spring-boot-starter-cache = { group = "org.springframework.boot", name = "spring-boot-starter-cache", version.ref = "springV3" }
+org-springframework-v3-spring-boot-starter-data-jdbc = { group = "org.springframework.boot", name = "spring-boot-starter-data-jdbc", version.ref = "springV3" }
+org-springframework-v3-spring-boot-starter-data-jpa = { group = "org.springframework.boot", name = "spring-boot-starter-data-jpa", version.ref = "springV3" }
+
+[plugins]
+axion-release = { id = "pl.allegro.tech.build.axion-release", version = "1.13.6" }
+gradle-git-properties = { id = "com.gorylenko.gradle-git-properties", version = "2.4.1" }
+jib = { id = "com.google.cloud.tools.jib", version = "3.3.1" }
+kotlin-allopen = { id = "org.jetbrains.kotlin.plugin.allopen", version.ref = "kotlin" }
+kotlin-jpa = { id = "org.jetbrains.kotlin.plugin.jpa", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+sonarqube = { id = "org.sonarqube", version = "4.0.0.2929" }
+spring-boot-v2 = { id = "org.springframework.boot", version.ref = "springV2" }
