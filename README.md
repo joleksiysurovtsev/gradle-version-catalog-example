@@ -64,10 +64,10 @@ publishing {
         maven {
             url = uri("https://your.maven-repo.net/repository/maven-releases/")
             credentials {
-                val nexusUsername: String? by project
-                val nexusPassword: String? by project
-                username = nexusUsername
-                password = nexusPassword
+                val repositoryUsername: String? by project
+                val repositoryPassword: String? by project
+                username = repositoryUsername
+                password = repositoryPassword
             }
         }
     }
